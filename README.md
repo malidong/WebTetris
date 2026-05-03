@@ -1,13 +1,10 @@
-# Tetris Game
+# WebTetris
 
 A web-based Tetris game built with TypeScript and HTML5 Canvas.
 
-## Tech Stack
-- TypeScript
-- HTML5 Canvas
-- Node.js (build tool)
+## Play Online
 
-## Getting Started
+Launch the game locally:
 
 ```bash
 npm install
@@ -15,25 +12,40 @@ npm run build
 npm start
 ```
 
-## How to Play
+Then open `http://localhost:8080`
+
+## Docker Deployment
+
+Run the game in an isolated Docker container:
+
+```bash
+docker compose up -d --build
+```
+
+Then open `http://localhost:8080`
+
+Stop the container:
+
+```bash
+docker compose down
+```
+
+## Controls
+
 - **Arrow Left/Right**: Move piece
 - **Arrow Down**: Soft drop
 - **Arrow Up**: Rotate clockwise
 - **Space**: Hard drop
 - **Z**: Rotate counter-clockwise
 - **P**: Pause
-- **R**: Restart
+- **Enter**: Restart (when game over)
 
-## Architecture
+## Tech Stack
 
-The game follows a modular architecture:
-- `src/core/`: Game logic (Board, Piece, Collision Detection)
-- `src/renderer/`: Canvas rendering
-- `src/input/`: Keyboard and touch input handling
-- `src/engine/`: Game loop
-- `src/scoring/`: Score and level management
-- `src/storage/`: Local storage for high scores
-- `src/ui/`: Menu and overlay screens
+- TypeScript
+- HTML5 Canvas
+- Node.js (build tool)
+- Nginx (Docker runtime)
 
 ## Build
 
