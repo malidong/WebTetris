@@ -143,5 +143,4 @@ vite.config.ts.timestamp-*
 .vite/
 
 # Project specific
-.opencode/
 .DS_Store
