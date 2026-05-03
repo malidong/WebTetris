@@ -1,0 +1,13 @@
+{
+  "name": "tetris-game",
+  "version": "1.0.0",
+  "description": "Web-based Tetris game built with TypeScript and HTML5 Canvas",
+  "scripts": {
+    "build": "tsc && cp public/index.html dist/",
+    "start": "npx http-server dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "http-server": "^14.1.1"
+  }
+}
